@@ -13,7 +13,7 @@ try:
         print(i)
     video_tag=input("Please enter video itag number: ")
     audio_tag=input("Please enter audio itag number: ")
-    video = youtube.streams.filter(res='2160p')
+#   video = youtube.streams.filter(res='2160p') if u want use this
     videostream = youtube.streams.get_by_itag(video_tag) #video
     audiostream = youtube.streams.get_by_itag(audio_tag) #audio
     print(f"downloading: {videostream}")
